@@ -1,0 +1,86 @@
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.note-form button {
+  align-self: flex-end;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #8884;
+}
+
+button {
+  cursor: pointer;
+}
+
+.search {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.notes {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.note {
+  border: 1px solid #8884;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+.note.pinned {
+  border-color: #aa3bff;
+}
+
+.note header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.note h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.note p {
+  white-space: pre-wrap;
+}
+
+.note small {
+  opacity: 0.7;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.error {
+  color: #d33;
+}
+
+.empty {
+  opacity: 0.7;
+}
